@@ -1,4 +1,4 @@
-# Network System Administrator
+# Network Sever Administrator
   is an application that allows system administartor to controle machines on the network throught a client installed on the machines
   which allows sending files,messages and other features like locking the system and executing command over http and ws protocol
 
