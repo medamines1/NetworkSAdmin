@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>main</display-name>
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>main.Validation</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>main.WelcomeUser</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>manage</servlet-name>
+    <servlet-class>main.manageD</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>main.logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>connect</servlet-name>
+    <servlet-class>api.connect</servlet-class>
+  </servlet>
+    
+  <servlet>
+  	<servlet-name>get_json</servlet-name>
+    <servlet-class>api.jsnReplier</servlet-class>
+  </servlet>
+
+  <servlet>
+  	<servlet-name>file_manager</servlet-name>
+    <servlet-class>api.file_handler</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>mailbox</servlet-name>
+    <servlet-class>small.mailbox</servlet-class>
+  </servlet>
+
+    
+  <servlet>
+  	<servlet-name>compose</servlet-name>
+    <servlet-class>small.compose</servlet-class>
+  </servlet>
+
+  <servlet>
+  	<servlet-name>calendar</servlet-name>
+    <servlet-class>small.calendar</servlet-class>
+  </servlet>
+    
+  <servlet>
+  	<servlet-name>getmail</servlet-name>
+    <servlet-class>small.readmail</servlet-class>
+  </servlet>    
+    
+  <servlet>
+    <servlet-name>newDev</servlet-name>
+    <servlet-class>small.newMachine</servlet-class>
+  </servlet>    
+    
+    
+    
+    
+    <!--**************************************************** going  to mapping************************************************************************** -->
+    
+    
+    
+    
+    
+    
+  
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/loginPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet-mapping>
+    <servlet-name>manage</servlet-name>
+    <url-pattern>/manage</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet-mapping>
+    <servlet-name>manage</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>connect</servlet-name>
+    <url-pattern>/connect</url-pattern>
+  </servlet-mapping>  
+
+  <servlet-mapping>
+  <servlet-name>get_json</servlet-name>
+    <url-pattern>/update_machine</url-pattern>
+  </servlet-mapping>  
+
+  <servlet-mapping> 
+  	<servlet-name>file_manager</servlet-name>
+    <url-pattern>/file</url-pattern>
+   </servlet-mapping> 
+  
+  
+  
+
+  <servlet-mapping>
+    <servlet-name>mailbox</servlet-name>
+    <url-pattern>/mailbox.html</url-pattern>
+  </servlet-mapping>  
+
+  <servlet-mapping>
+  <servlet-name>compose</servlet-name>
+    <url-pattern>/compose.html</url-pattern>
+  </servlet-mapping>  
+
+  <servlet-mapping> 
+  	<servlet-name>calendar</servlet-name>
+    <url-pattern>/calendar.html</url-pattern>
+   </servlet-mapping> 
+   
+   <servlet-mapping> 
+  	<servlet-name>getmail</servlet-name>
+    <url-pattern>/read-mail.html</url-pattern>
+   </servlet-mapping> 
+    
+   <servlet-mapping> 
+  	<servlet-name>newDev</servlet-name>
+    <url-pattern>/newMachine</url-pattern>
+   </servlet-mapping>   
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+  
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+ 
+  
+     <context-param> 
+      <description>Location to store uploaded file</description> 
+      <param-name>file-upload</param-name> 
+      <param-value>
+         f:\file_store\
+      </param-value> 
+   </context-param>
+   
+   
+
+<listener>
+<listener-class>task_per.ping_all</listener-class>
+</listener>
+<!-- 
+blabla
+ -->
+
+<!-- end of file  -->
+</web-app>

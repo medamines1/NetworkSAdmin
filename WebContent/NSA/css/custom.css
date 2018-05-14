@@ -1,0 +1,17 @@
+.btn-space {
+   
+    background-color: #00A65A;
+     border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2 {background-color: #3C8DBC;} /* Blue */
+.button3 {background-color: #DD4B39;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
